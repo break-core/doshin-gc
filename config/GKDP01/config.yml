@@ -1,0 +1,10 @@
+name: kyojin
+object_base: orig/GKDP01
+object: sys/main.dol
+
+hash: B4208659AE08447E8FA5872E81690E5AF6BABB91
+
+symbols: config/GKDP01/symbols.txt
+splits: config/GKDP01/splits.txt
+
+mw_comment_version: 10
