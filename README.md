@@ -18,13 +18,13 @@ Supported versions:
 
 TODO LIST
 ====
-[ ] Label EVERYTHING in symbols.txt
+- [ ] Label EVERYTHING in symbols.txt
 
-[ ] Split a good amount of files
+- [ ] Split a good amount of files
 
-[ ] Actually get to matching code
+- [ ] Actually get to matching code
 
-[ ] Layout and headers
+- [ ] Layout and headers
 
 Dependencies
 ============
