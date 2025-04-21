@@ -1,4 +1,4 @@
-Some Game  
+Doshin the Giant  
 [![Build Status]][actions] [![Discord Badge]][discord]
 =============
 
