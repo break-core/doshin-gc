@@ -241,17 +241,6 @@ def DolphinLib(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
     }
 
 
-# Helper function for REL script objects
-def Rel(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
-    return {
-        "lib": lib_name,
-        "mw_version": "GC/1.3.2",
-        "cflags": cflags_rel,
-        "progress_category": "game",
-        "objects": objects,
-    }
-
-
 Matching = True                   # Object matches and should be linked
 NonMatching = False               # Object does not match and should not be linked
 Equivalent = config.non_matching  # Object should be linked when configured with --non-matching
@@ -275,6 +264,14 @@ config.libs = [
             Object(NonMatching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
         ],
     },
+    DolphinLib("os", [
+        Object(NonMatching, "dolphin/os/OSTime.c"),
+        Object(NonMatching, "dolphin/os/__ppc_eabi_init.cpp")
+    ]),
+    DolphinLib("pad", [
+        Object(NonMatching, "dolphin/pad/pad.c"),
+        Object(NonMatching, "dolphin/pad/Padclamp.c")
+    ])
 ]
 
 

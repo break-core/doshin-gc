@@ -11,3 +11,28 @@ Sections:
 	.sdata      type:data align:4
 	.sbss       type:bss align:32
 	.sdata2     type:rodata align:32
+
+Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
+	.text       start:0x8006E024 end:0x8006E0A0
+	.ctors      start:0x800E2D60 end:0x800E2D64
+	.dtors      start:0x800E2DA0 end:0x800E2DA4
+	.sdata      start:0x8017A010 end:0x8017A014
+
+dolphin/os/OSTime.c:
+	.text       start:0x800B5CF4 end:0x800B6118
+	.data       start:0x801036A0 end:0x80103700
+
+dolphin/os/__ppc_eabi_init.cpp:
+	.init       start:0x8000541C end:0x80005470
+	.text       start:0x800B6118 end:0x800B61AC
+
+dolphin/pad/Padclamp.c:
+	.text       start:0x800B61AC end:0x800B63E4
+	.sdata      start:0x8017A118 end:0x8017A120
+
+dolphin/pad/pad.c:
+	.text       start:0x800B63E4 end:0x800B7EAC
+	.data       start:0x80103700 end:0x80103710
+	.bss        start:0x80178D60 end:0x80178DB0
+	.sdata      start:0x8017A120 end:0x8017A140
+	.sbss       start:0x8017A870 end:0x8017A898
