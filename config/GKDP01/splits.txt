@@ -18,7 +18,7 @@ Kyojin/main.cpp:
 	.text       start:0x8000BEA0 end:0x8000D6A0
 	.ctors      start:0x800E2D64 end:0x800E2D68
 	.rodata     start:0x800E2DC0 end:0x800E2F70
-	.data       start:0x800ECE80 end:0x800ED2B0
+	.data       start:0x800ECE80 end:0x800ED0B0
 	.bss        start:0x80104B00 end:0x801058C0
 	.sdata      start:0x801799E0 end:0x80179A00
 	.sbss       start:0x8017A180 end:0x8017A190
@@ -28,9 +28,28 @@ Kyojin/hiodev.cpp:
 	extab       start:0x800056DC end:0x800056F4
 	extabindex  start:0x800087B4 end:0x800087D8
 	.text       start:0x8000D6A0 end:0x8000D9C8
-	.bss        start:0x801058C0 end:0x8011D8E0
+	.bss        start:0x801058C0 end:0x8011D8C0
 	.sdata      start:0x80179A00 end:0x80179A10
 	.sbss       start:0x8017A190 end:0x8017A1A0
+
+Kyojin/txtstream.cpp:
+	extab       start:0x800056F4 end:0x8000572C
+	extabindex  start:0x800087D8 end:0x8000882C
+	.text       start:0x8000D9C8 end:0x8000DD60
+	.rodata     start:0x800E2F70 end:0x800E2FA8
+	.data       start:0x800ED0B0 end:0x800ED0D8
+	.bss        start:0x8011D8C0 end:0x8011D8E0
+	.sdata      start:0x80179A10 end:0x80179A18
+
+Kyojin/gfx.cpp:
+	extab       start:0x8000572C end:0x8000577C
+	extabindex  start:0x8000882C end:0x800088A4
+	.text       start:0x8000DD60 end:0x8000EF68
+	.ctors      start:0x800E2D68 end:0x800E2D6C
+	.rodata     start:0x800E2FA8 end:0x800E2FB8
+	.data       start:0x800ED0D8 end:0x800ED230
+	.bss        start:0x8011D8E0 end:0x8011D920
+	.sdata      start:0x80179A18 end:0x80179A28
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
