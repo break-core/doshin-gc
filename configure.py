@@ -283,7 +283,7 @@ config.libs = [
             Object(NonMatching, "Kyojin/txtstream.cpp"),
             Object(NonMatching, "Kyojin/gfx.cpp"),
             Object(NonMatching, "Kyojin/node.cpp"),
-            # Object(NonMatching, "Kyojin/stream.cpp"),
+            Object(NonMatching, "Kyojin/stream.cpp"),
             # Object(NonMatching, "Kyojin/cubesys.cpp"),
             # Object(NonMatching, "Kyojin/sys.cpp"),
         ],

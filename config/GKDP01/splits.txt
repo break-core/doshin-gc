@@ -40,7 +40,6 @@ Kyojin/txtstream.cpp:
 	.data       start:0x800ED0B0 end:0x800ED0D8
 	.bss        start:0x8011D8C0 end:0x8011D8E0
 	.sdata      start:0x80179A10 end:0x80179A18
-	.sdata2     start:0x8017A958 end:0x8017A9A8
 
 Kyojin/gfx.cpp:
 	extab       start:0x8000572C end:0x8000577C
@@ -51,6 +50,7 @@ Kyojin/gfx.cpp:
 	.data       start:0x800ED0D8 end:0x800ED230
 	.bss        start:0x8011D8E0 end:0x8011D920
 	.sdata      start:0x80179A18 end:0x80179A28
+	.sdata2     start:0x8017A958 end:0x8017A9A8
 
 Kyojin/node.cpp:
 	extab       start:0x8000577C end:0x800057C4
@@ -59,6 +59,16 @@ Kyojin/node.cpp:
 	.rodata     start:0x800E2FB8 end:0x800E2FF0
 	.data       start:0x800ED230 end:0x800ED250
 	.sdata      start:0x80179A28 end:0x80179A30
+	.sdata2     start:0x8017A9A8 end:0x8017A9B0
+
+Kyojin/stream.cpp:
+	extab       start:0x800057C4 end:0x80005804
+	extabindex  start:0x80008910 end:0x80008970
+	.text       start:0x8000F328 end:0x8000F664
+	.rodata     start:0x800E2FF0 end:0x800E3008
+	.data       start:0x800ED250 end:0x800ED2B0
+	.sdata      start:0x80179A30 end:0x80179A40
+	.sdata2     start:0x8017A9B0 end:0x8017A9C0
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
