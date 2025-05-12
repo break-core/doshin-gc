@@ -40,6 +40,7 @@ Kyojin/txtstream.cpp:
 	.data       start:0x800ED0B0 end:0x800ED0D8
 	.bss        start:0x8011D8C0 end:0x8011D8E0
 	.sdata      start:0x80179A10 end:0x80179A18
+	.sdata2     start:0x8017A958 end:0x8017A9A8
 
 Kyojin/gfx.cpp:
 	extab       start:0x8000572C end:0x8000577C
