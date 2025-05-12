@@ -279,7 +279,7 @@ config.libs = [
         "progress_category": "game",  # str | List[str]
         "objects": [
             Object(NonMatching, "Kyojin/main.cpp"),
-            # Object(NonMatching, "Kyojin/hiodev.cpp"),
+            Object(NonMatching, "Kyojin/hiodev.cpp"),
             # Object(NonMatching, "Kyojin/txtstream.cpp"),
             # Object(NonMatching, "Kyojin/gfx.cpp"),
             # Object(NonMatching, "Kyojin/node.cpp"),
