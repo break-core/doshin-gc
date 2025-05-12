@@ -13,7 +13,15 @@ Sections:
 	.sdata2     type:rodata align:32
 
 Kyojin/main.cpp:
-	.data       start:0x800ECE80 end:0x800ED08C
+	extab       start:0x80005520 end:0x800056DC
+	extabindex  start:0x800086A0 end:0x800087B4
+	.text       start:0x8000BEA0 end:0x8000D6A0
+	.ctors      start:0x800E2D64 end:0x800E2D68
+	.rodata     start:0x800E2DC0 end:0x800E2F70
+	.bss        start:0x80104B00 end:0x801058C0
+	.sdata      start:0x801799E0 end:0x80179A00
+	.sbss       start:0x8017A180 end:0x8017A190
+	.sdata2     start:0x8017A940 end:0x8017A958
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
