@@ -52,6 +52,14 @@ Kyojin/gfx.cpp:
 	.bss        start:0x8011D8E0 end:0x8011D920
 	.sdata      start:0x80179A18 end:0x80179A28
 
+Kyojin/node.cpp:
+	extab       start:0x8000577C end:0x800057C4
+	extabindex  start:0x800088A4 end:0x80008910
+	.text       start:0x8000EF68 end:0x8000F328
+	.rodata     start:0x800E2FB8 end:0x800E2FF0
+	.data       start:0x800ED230 end:0x800ED250
+	.sdata      start:0x80179A28 end:0x80179A30
+
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
 	.ctors      start:0x800E2D60 end:0x800E2D64
