@@ -193,7 +193,7 @@ cflags_base = [
     '-pragma "warn_notinlined off"',
     "-maxerrors 1",
     "-nosyspath",
-    "-RTTI off",
+    "-RTTI on",
     "-fp_contract on",
     "-str reuse",
     "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
@@ -271,7 +271,23 @@ config.libs = [
     DolphinLib("pad", [
         Object(NonMatching, "dolphin/pad/pad.c"),
         Object(NonMatching, "dolphin/pad/Padclamp.c")
-    ])
+    ]),
+    {
+        "lib": "Kyojin",
+        "mw_version": config.linker_version,
+        "cflags": cflags_base,
+        "progress_category": "game",  # str | List[str]
+        "objects": [
+            Object(NonMatching, "Kyojin/main.cpp"),
+            # Object(NonMatching, "Kyojin/hiodev.cpp"),
+            # Object(NonMatching, "Kyojin/txtstream.cpp"),
+            # Object(NonMatching, "Kyojin/gfx.cpp"),
+            # Object(NonMatching, "Kyojin/node.cpp"),
+            # Object(NonMatching, "Kyojin/stream.cpp"),
+            # Object(NonMatching, "Kyojin/cubesys.cpp"),
+            # Object(NonMatching, "Kyojin/sys.cpp"),
+        ],
+    },
 ]
 
 

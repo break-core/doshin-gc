@@ -6,5 +6,8 @@ hash: B4208659AE08447E8FA5872E81690E5AF6BABB91
 
 symbols: config/GKDP01/symbols.txt
 splits: config/GKDP01/splits.txt
-
+symbols_known: false
+fill_gaps: true
+write_asm: true
+detect_strings: true
 mw_comment_version: 10
