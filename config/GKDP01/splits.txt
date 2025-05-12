@@ -12,6 +12,9 @@ Sections:
 	.sbss       type:bss align:32
 	.sdata2     type:rodata align:32
 
+Kyojin/main.cpp:
+	.data       start:0x800ECE80 end:0x800ED08C
+
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
 	.ctors      start:0x800E2D60 end:0x800E2D64
