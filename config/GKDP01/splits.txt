@@ -70,6 +70,13 @@ Kyojin/stream.cpp:
 	.sdata      start:0x80179A30 end:0x80179A40
 	.sdata2     start:0x8017A9B0 end:0x8017A9C0
 
+Kyojin/cubesys.cpp:
+	.text		start:0x8000F664 end:0x80014940
+	.rodata		start:0x800E3008 end:0x800E3740
+	.data		start:0x800ED2B0 end:0x800ED840
+	.bss		start:0x8011D920 end:0x8014A2D0
+	.sdata		start:0x80179A40 end:0x80179AA8 
+
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
 	.ctors      start:0x800E2D60 end:0x800E2D64
