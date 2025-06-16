@@ -13,72 +13,84 @@ Sections:
 	.sdata2     type:rodata align:32
 
 Kyojin/main.cpp:
-	extab       start:0x80005520 end:0x800056DC
-	extabindex  start:0x800086A0 end:0x800087B4
-	.text       start:0x8000BEA0 end:0x8000D6A0
-	.ctors      start:0x800E2D64 end:0x800E2D68
-	.rodata     start:0x800E2DC0 end:0x800E2F70
-	.data       start:0x800ECE80 end:0x800ED0B0
-	.bss        start:0x80104B00 end:0x801058C0
-	.sdata      start:0x801799E0 end:0x80179A00
-	.sbss       start:0x8017A180 end:0x8017A190
-	.sdata2     start:0x8017A940 end:0x8017A958
+	.text		start:0x8000BEA0 end:0x8000D6A0
+	.rodata		start:0x800E2DC0 end:0x800E2F70
+	.data		start:0x800ECE80 end:0x800ED0B0
+	.bss		start:0x80104B00 end:0x801058C0
+	.sdata		start:0x801799E0 end:0x80179A00
+	.sbss		start:0x8017A180 end:0x8017A190
+	.sdata2		start:0x8017A940 end:0x8017A958
 
 Kyojin/hiodev.cpp:
-	extab       start:0x800056DC end:0x800056F4
-	extabindex  start:0x800087B4 end:0x800087D8
-	.text       start:0x8000D6A0 end:0x8000D9C8
-	.bss        start:0x801058C0 end:0x8011D8C0
-	.sdata      start:0x80179A00 end:0x80179A10
-	.sbss       start:0x8017A190 end:0x8017A1A0
+	.text		start:0x8000D6A0 end:0x8000D9C8	
+	.bss		start:0x801058C0 end:0x8011D8C0
+	.sdata		start:0x80179A00 end:0x80179A10
+	.sbss		start:0x8017A190 end:0x8017A1A0
 
 Kyojin/txtstream.cpp:
-	extab       start:0x800056F4 end:0x8000572C
-	extabindex  start:0x800087D8 end:0x8000882C
-	.text       start:0x8000D9C8 end:0x8000DD60
-	.rodata     start:0x800E2F70 end:0x800E2FA8
-	.data       start:0x800ED0B0 end:0x800ED0D8
-	.bss        start:0x8011D8C0 end:0x8011D8E0
-	.sdata      start:0x80179A10 end:0x80179A18
+	.text		start:0x8000D9C8 end:0x8000DD60
+	.rodata		start:0x800E2F70 end:0x800E2FA8
+	.bss		start:0x8011D8C0 end:0x8011D8E0
+	.sdata		start:0x80179A10 end:0x80179A18
 
 Kyojin/gfx.cpp:
-	extab       start:0x8000572C end:0x8000577C
-	extabindex  start:0x8000882C end:0x800088A4
-	.text       start:0x8000DD60 end:0x8000EF68
-	.ctors      start:0x800E2D68 end:0x800E2D6C
-	.rodata     start:0x800E2FA8 end:0x800E2FB8
-	.data       start:0x800ED0D8 end:0x800ED230
-	.bss        start:0x8011D8E0 end:0x8011D920
-	.sdata      start:0x80179A18 end:0x80179A28
-	.sdata2     start:0x8017A958 end:0x8017A9A8
+	.text		start:0x8000DD60 end:0x8000EF64
+	.rodata		start:0x800E2FA8 end:0x800E2FB8
+	.bss		start:0x8011D8E0 end:0x8011D920
+	.sdata		start:0x80179A18 end:0x80179A28
+	.sdata2		start:0x8017A958 end:0x8017A9A8
 
 Kyojin/node.cpp:
-	extab       start:0x8000577C end:0x800057C4
-	extabindex  start:0x800088A4 end:0x80008910
-	.text       start:0x8000EF68 end:0x8000F328
-	.rodata     start:0x800E2FB8 end:0x800E2FF0
-	.data       start:0x800ED230 end:0x800ED250
-	.sdata      start:0x80179A28 end:0x80179A30
-	.sdata2     start:0x8017A9A8 end:0x8017A9B0
+	.text		start:0x8000EF64 end:0x8000F328
+	.rodata		start:0x800E2FB8 end:0x800E2FF0
+	.sdata		start:0x80179A28 end:0x80179A30
+	.sdata2		start:0x8017A9A8 end:0x8017A9B0
 
 Kyojin/stream.cpp:
-	extab       start:0x800057C4 end:0x80005804
-	extabindex  start:0x80008910 end:0x80008970
-	.text       start:0x8000F328 end:0x8000F664
-	.rodata     start:0x800E2FF0 end:0x800E3008
-	.data       start:0x800ED250 end:0x800ED2B0
-	.sdata      start:0x80179A30 end:0x80179A40
-	.sdata2     start:0x8017A9B0 end:0x8017A9C0
+	.text		start:0x8000F328 end:0x8000F664
+	.rodata		start:0x800E2FF0 end:0x800E3008
+	.sdata		start:0x80179A30 end:0x80179A40
+	.sdata2		start:0x8017A9B0 end:0x8017A9C0
+
+Kyojin/sys.cpp:
+	.text		start:0x8000F664 end:0x80010E34
+	.rodata		start:0x800E3008 end:0x800E3228
+	.sdata		start:0x80179A40 end:0x80179A60
+	.sbss		start:0x8017A1A0 end:0x8017A1A8
+	.sdata2		start:0x8017A9C0 end:0x8017A9D8
 
 Kyojin/cubesys.cpp:
-	extab       start:0x80005804 end:0x80005C90
-	extabindex  start:0x80008970 end:0x80008DCC
-	.text       start:0x8000F664 end:0x80014940
-	.ctors      start:0x800E2D6C end:0x800E2D70
-	.rodata     start:0x800E3008 end:0x800E3740
-	.data       start:0x800ED2B0 end:0x800ED840
-	.bss        start:0x8011D920 end:0x8014A2D0
-	.sdata      start:0x80179A40 end:0x80179AA8
+	.text		start:0x80010E34 end:0x80014AE0
+	.rodata		start:0x800E3228 end:0x800E3740
+	.data		start:0x800ED0B0 end:0x800ED840
+	.bss		start:0x8011D920 end:0x8014A2D0
+	.sdata		start:0x80179A60 end:0x80179AA8
+	.sbss		start:0x8017A1A8 end:0x8017A1B0
+	.sdata2		start:0x8017A9D8 end:0x8017AA58
+
+Kyojin/cubegfx.cpp:
+	.text		start:0x80014AE0 end:0x8001BF1C
+	.rodata		start:0x800E3740 end:0x800E3AA0
+	.data		start:0x800ED840 end:0x800F3CC8
+	.bss		start:0x8014A2D0 end:0x8014A658
+	.sdata		start:0x80179AA8 end:0x80179AD8
+	.sbss		start:0x8017A1B0 end:0x8017A1D0
+	.sdata2		start:0x8017AA58 end:0x8017AB68
+
+Kyojin/map.cpp:
+	.text		start:0x8001BF1C end:0x80021D0C
+	.rodata		start:0x800E3AA0 end:0x800E3C08
+	.data 		start:0x800F3CC8 end:0x800F3D40
+	.bss		start:0x8014A658 end:0x8014A698
+	.sdata		start:0x80179AD8 end:0x80179AF8
+	.sdata2		start:0x8017AB68 end:0x8017AC80
+
+Kyojin/dosh.cpp:
+	.text		start:0x80021D0C end:0x80028C7C
+	.rodata		start:0x800E3C08 end:0x800E3C88
+	.data		start:0x800F3D40 end:0x800F44B8
+	.sdata		start:0x80179AF8 end:0x80179B38
+	.sdata2		start:0x8017AC80 end:0x8017AE90
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
@@ -86,21 +98,14 @@ Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.dtors      start:0x800E2DA0 end:0x800E2DA4
 	.sdata      start:0x8017A010 end:0x8017A014
 
-dolphin/os/OSTime.c:
-	.text       start:0x800B5CF4 end:0x800B6118
-	.data       start:0x801036A0 end:0x80103700
+characterPipeline/shader/shaderExecute.c:
+	.text		start:0x800D5904 end:0x800D7384
+	.bss		start:0x80178DB0 end:0x80179580
+	.sbss		start:0x8017A8A0 end:0x8017A8B0
 
-dolphin/os/__ppc_eabi_init.cpp:
-	.init       start:0x8000541C end:0x80005470
-	.text       start:0x800B6118 end:0x800B61AC
+characterPipeline/shader/shaderResManage.c:
+	.data		start:0x80103710 end:0x801037D8
 
-dolphin/pad/Padclamp.c:
-	.text       start:0x800B61AC end:0x800B63E4
-	.sdata      start:0x8017A118 end:0x8017A120
-
-dolphin/pad/pad.c:
-	.text       start:0x800B63E4 end:0x800B7EAC
-	.data       start:0x80103700 end:0x80103710
-	.bss        start:0x80178D60 end:0x80178DB0
-	.sdata      start:0x8017A120 end:0x8017A140
-	.sbss       start:0x8017A870 end:0x8017A898
+characterPipeline/shader/shaderSetTEV.c:
+	.text		start:0x800D7384 end:0x800D7C80
+	.data		start:0x801037D8 end:0x80103818

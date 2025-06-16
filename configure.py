@@ -264,27 +264,19 @@ config.libs = [
             Object(NonMatching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
         ],
     },
-    DolphinLib("os", [
-        Object(NonMatching, "dolphin/os/OSTime.c"),
-        Object(NonMatching, "dolphin/os/__ppc_eabi_init.cpp")
-    ]),
-    DolphinLib("pad", [
-        Object(NonMatching, "dolphin/pad/pad.c"),
-        Object(NonMatching, "dolphin/pad/Padclamp.c")
-    ]),
     {
         "lib": "Kyojin",
         "mw_version": config.linker_version,
         "cflags": cflags_base,
         "progress_category": "game",  # str | List[str]
         "objects": [
-            Object(NonMatching, "Kyojin/main.cpp"),
-            Object(NonMatching, "Kyojin/hiodev.cpp"),
-            Object(NonMatching, "Kyojin/txtstream.cpp"),
-            Object(NonMatching, "Kyojin/gfx.cpp"),
-            Object(NonMatching, "Kyojin/node.cpp"),
-            Object(NonMatching, "Kyojin/stream.cpp"),
-            Object(NonMatching, "Kyojin/cubesys.cpp"),
+            # Object(NonMatching, "Kyojin/main.cpp"),
+            # Object(NonMatching, "Kyojin/hiodev.cpp"),
+            # Object(NonMatching, "Kyojin/txtstream.cpp"),
+            # Object(NonMatching, "Kyojin/gfx.cpp"),
+            # Object(NonMatching, "Kyojin/node.cpp"),
+            # Object(NonMatching, "Kyojin/stream.cpp"),
+            # Object(NonMatching, "Kyojin/cubesys.cpp"),
             # Object(NonMatching, "Kyojin/sys.cpp"),
         ],
     },
