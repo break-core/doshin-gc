@@ -84,6 +84,7 @@ Kyojin/map.cpp:
 	.data 		start:0x800F3CC8 end:0x800F3D40
 	.bss		start:0x8014A658 end:0x8014A698
 	.sdata		start:0x80179AD8 end:0x80179AF8
+	.sbss		start:0x8017A1D0 end:0x8017A1D8
 	.sdata2		start:0x8017AB68 end:0x8017AC80
 
 Kyojin/dosh.cpp:
@@ -91,6 +92,7 @@ Kyojin/dosh.cpp:
 	.rodata		start:0x800E3C08 end:0x800E3C88
 	.data		start:0x800F3D40 end:0x800F44B8
 	.sdata		start:0x80179AF8 end:0x80179B38
+	.sbss		start:0x8017A1D8 end:
 	.sdata2		start:0x8017AC80 end:0x8017AE90
 
 Kyojin/anim.cpp:
@@ -125,6 +127,7 @@ Kyojin/debug.cpp:
 	.rodata		start:0x800E3E78 end:0x800E3E88
 	.bss		start:0x8014A6B8 end:0x8014AEC0
 	.sdata		start:0x80179BB8 end:0x80179BC0
+	.sbss		start:0x8017A1F0 end:0x8017A1F4
 	.sdata2		start:0x8017B0F0 end:0x8017B138
 
 Kyojin/object.cpp:
@@ -146,6 +149,7 @@ Kyojin/sky.cpp:
 	.data		start:0x800F65D0 end:0x800F6760
 	.bss		start:0x8014AEC0 end:0x8014AED0
 	.sdata		start:0x80179BE0 end:0x80179C18
+	.sbss		start:0x8017A1F4 end:0x8017A1FC
 	.sdata2		start:0x8017B7A0 end:0x8017B910
 
 Kyojin/town.cpp:
@@ -167,6 +171,7 @@ Kyojin/shadow.cpp:
 	.text		start:0x80044E88 end:0x80045A60
 	.rodata		start:0x800E4750 end:0x800E4768
 	.data		start:0x800F7BF8 end:0x800F7C20
+	.sbss		start:0x8017A1FC end:0x8017A200
 	.sdata2		start:0x8017BC50 end:0x8017BCA8
 
 Kyojin/doshfx.cpp:
@@ -179,6 +184,7 @@ Kyojin/lod.cpp:
 	.text		start:0x80048F88 end:0x80049A10
 	.rodata		start:0x800E47F8 end:0x800E4810
 	.data		start:0x800F7DB0 end:0x800F7DD8
+	.sbss		start:0x8017A200 end:0x8017A204
 	.sdata2		start:0x8017BE28 end:0x8017BE90
 
 Kyojin/norty.cpp:
@@ -204,6 +210,7 @@ Kyojin/flock.cpp:
 	.text		start:0x8004E414 end:0x80051BF4
 	.rodata		start:0x800E48F8 end:0x800E4968
 	.data		start:0x800F8420 end:0x800F8978
+	.sbss		start:0x8017A204 end:0x8017A208
 	.sdata2		start:0x8017C118 end:0x8017C2D0
 
 Kyojin/sound.cpp:
