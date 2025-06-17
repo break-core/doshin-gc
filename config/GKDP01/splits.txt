@@ -137,6 +137,48 @@ Kyojin/shapes.cpp:
 	.text		start:0x8003541C end:0x800358A4
 	.rodata		start:0x800E3F20 end:0x800E4250
 	.data		start:0x800F5020 end:0x800F65D0
+	.sdata2		start:0x8017B1C0 end:0x8017B7A0
+
+Kyojin/sky.cpp:
+	.text		start:0x800358A4 end:0x800396F0
+	.rodata		start:0x800E4250 end:0x800E4328
+	.data		start:0x800F65D0 end:0x800F6760
+	.bss		start:0x8014AEC0 end:0x8014AED0
+	.sdata		start:0x80179BE0 end:0x80179C18
+	.sdata2		start:0x8017B7A0 end:0x8017B910
+
+Kyojin/town.cpp:
+	.text		start:0x800396F0 end:0x80040AC4
+	.rodata		start:0x800E4328 end:0x800E4528
+	.data		start:0x800F6760 end:0x800F79C0
+	.sdata		start:0x80179C18 end:0x80179CC0
+	.sdata2		start:0x8017B910 end:0x8017BB90
+
+Kyojin/game.cpp:
+	.text		start:0x80040AC4 end:0x80044E88
+	.rodata		start:0x800E4528 end:0x800E4750
+	.data		start:0x800F79C0 end:0x800F7BF8
+	.bss		start:0x8014AED0 end:0x8014CFC0
+	.sdata		start:0x80179CC0 end:0x80179CD0
+	.sdata2		start:0x8017BB90 end:0x8017BC50
+
+Kyojin/shadow.cpp:
+	.text		start:0x80044E88 end:0x80045A60
+	.rodata		start:0x800E4750 end:0x800E4768
+	.data		start:0x800F7BF8 end:0x800F7C20
+	.sdata2		start:0x8017BC50 end:0x8017BCA8
+
+Kyojin/doshfx.cpp:
+	.text		start:0x80045A60 end:0x80048F88
+	.rodata		start:0x800E4768 end:0x800E47F8
+	.data		start:0x800F7C20 end:0x800F7DB0
+	.sdata2		start:0x8017BCA8 end:0x8017BE28
+
+Kyojin/lod.cpp:
+	.text		start:0x80048F88 end:0x80049A10
+	.rodata		start:0x800E47F8 end:0x800E4810
+	.data		start:0x800F7DB0 end:0x800F7DD8
+	.sdata2		start:0x8017BE28 end:0x8017BE8C
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
