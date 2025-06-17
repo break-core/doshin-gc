@@ -92,6 +92,52 @@ Kyojin/dosh.cpp:
 	.sdata		start:0x80179AF8 end:0x80179B38
 	.sdata2		start:0x8017AC80 end:0x8017AE90
 
+Kyojin/anim.cpp:
+	.text		start:0x80028C7C end:0x80028F48
+	.rodata		start:0x800E3C88 end:0x800E3C98
+	.data		start:0x800F44B8 end:0x800F44E0
+	.sdata2		start:0x8017AE90 end:0x8017AEA0
+
+Kyojin/human.cpp:
+	.text		start:0x80028F48 end:0x8002F1B4
+	.rodata		start:0x800E3C98 end:0x800E3E40
+	.data		start:0x800F44E0 end:0x800F4E78
+	.bss		start:0x8014A698 end:0x8014A6B8
+	.sdata		start:0x80179B38 end:0x80179B80
+	.sdata2		start:0x8017AEA0 end:0x8017AFC8
+
+Kyojin/biped.cpp:
+	.text		start:0x8002F1B4 end:0x8002FEC0
+	.data		start:0x800F4E78 end:0x800F4EF8
+	.sdata		start:0x80179B80 end:0x80179BA0
+	.sdata2		start:0x8017AFC8 end:0x8017B058
+
+Kyojin/water.cpp:
+	.text		start:0x8002FEC0 end:0x800324AC
+	.rodata		start:0x800E3E40 end:0x800E3E78
+	.data		start:0x800F4EF8 end:0x800F4F70
+	.sdata		start:0x80179BA0 end:0x80179BB8
+	.sdata2		start:0x8017B058 end:0x8017B0F0
+
+Kyojin/debug.cpp:
+	.text		start:0x800324AC end:0x80032B30
+	.rodata		start:0x800E3E78 end:0x800E3E88
+	.bss		start:0x8014A6B8 end:0x8014AEC0
+	.sdata		start:0x80179BB8 end:0x80179BC0
+	.sdata2		start:0x8017B0F0 end:0x8017B138
+
+Kyojin/object.cpp:
+	.text		start:0x80032B30 end:0x8003541C
+	.rodata		start:0x800E3E88 end:0x800E3F20
+	.data		start:0x800F4F70 end:0x800F5020
+	.sdata		start:0x80179BC0 end:0x80179BE0
+	.sdata2		start:0x8017B138 end:0x8017B1C0
+
+Kyojin/shapes.cpp:
+	.text		start:0x8003541C end:0x800358A4
+	.rodata		start:0x800E3F20 end:0x800E4250
+	.data		start:0x800F5020 end:0x800F65D0
+
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
 	.ctors      start:0x800E2D60 end:0x800E2D64
