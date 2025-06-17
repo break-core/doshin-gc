@@ -15,7 +15,7 @@ Sections:
 Kyojin/main.cpp:
 	.text		start:0x8000BEA0 end:0x8000D6A0
 	.rodata		start:0x800E2DC0 end:0x800E2F70
-	.data		start:0x800ECE80 end:0x800ED0B0
+	.data		start:0x800ECE80 end:0x800ED2B0
 	.bss		start:0x80104B00 end:0x801058C0
 	.sdata		start:0x801799E0 end:0x80179A00
 	.sbss		start:0x8017A180 end:0x8017A190
@@ -55,6 +55,7 @@ Kyojin/stream.cpp:
 Kyojin/sys.cpp:
 	.text		start:0x8000F664 end:0x80010E34
 	.rodata		start:0x800E3008 end:0x800E3228
+	.data		start:0x800ED2B0 end:0x800ED3A8
 	.sdata		start:0x80179A40 end:0x80179A60
 	.sbss		start:0x8017A1A0 end:0x8017A1A8
 	.sdata2		start:0x8017A9C0 end:0x8017A9D8
@@ -62,7 +63,7 @@ Kyojin/sys.cpp:
 Kyojin/cubesys.cpp:
 	.text		start:0x80010E34 end:0x80014AE0
 	.rodata		start:0x800E3228 end:0x800E3740
-	.data		start:0x800ED0B0 end:0x800ED840
+	.data		start:0x800ED3A8 end:0x800ED840
 	.bss		start:0x8011D920 end:0x8014A2D0
 	.sdata		start:0x80179A60 end:0x80179AA8
 	.sbss		start:0x8017A1A8 end:0x8017A1B0
@@ -178,7 +179,38 @@ Kyojin/lod.cpp:
 	.text		start:0x80048F88 end:0x80049A10
 	.rodata		start:0x800E47F8 end:0x800E4810
 	.data		start:0x800F7DB0 end:0x800F7DD8
-	.sdata2		start:0x8017BE28 end:0x8017BE8C
+	.sdata2		start:0x8017BE28 end:0x8017BE90
+
+Kyojin/norty.cpp:
+	.text		start:0x80049A10 end:0x8004A9AC
+	.rodata		start:0x800E4810 end:0x800E4850
+	.data		start:0x800F7DD8 end:0x800F7F48
+	.sdata2		start:0x8017BE90 end:0x8017BF28
+
+Kyojin/disaster.cpp:
+	.text		start:0x8004A9AC end:0x8004D518
+	.rodata		start:0x800E4850 end:0x800E48B0
+	.data		start:0x800F7F48 end:0x800F82E8
+	.bss		start:0x8014CFC0 end:0x8014D0A0
+	.sdata2		start:0x8017BF28 end:0x8017C080
+
+Kyojin/effect.cpp:
+	.text		start:0x8004D518 end:0x8004E414
+	.rodata		start:0x800E48B0 end:0x800E48F8
+	.data		start:0x800F82E8 end:0x800F8420
+	.sdata2		start:0x8017C080 end:0x8017C118
+
+Kyojin/flock.cpp:
+	.text		start:0x8004E414 end:0x80051BF4
+	.rodata		start:0x800E48F8 end:0x800E4968
+	.data		start:0x800F8420 end:0x800F8978
+	.sdata2		start:0x8017C118 end:0x8017C2D0
+
+Kyojin/sound.cpp:
+	.text		start:0x80051BF4 end:0x80053EC8
+	.rodata		start:0x800E4968 end:0x800E4B90
+	.data		start:0x800F8978 end:0x800F8A50
+	.sdata2		start:0x8017C2D0 end:0x8017C3D0
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
