@@ -84,7 +84,7 @@ Kyojin/map.cpp:
 	.data 		start:0x800F3CC8 end:0x800F3D40
 	.bss		start:0x8014A658 end:0x8014A698
 	.sdata		start:0x80179AD8 end:0x80179AF8
-	.sbss		start:0x8017A1D0 end:0x8017A1D8
+	.sbss		start:0x8017A1D0 end:0x8017A1EC
 	.sdata2		start:0x8017AB68 end:0x8017AC80
 
 Kyojin/dosh.cpp:
@@ -92,7 +92,6 @@ Kyojin/dosh.cpp:
 	.rodata		start:0x800E3C08 end:0x800E3C88
 	.data		start:0x800F3D40 end:0x800F44B8
 	.sdata		start:0x80179AF8 end:0x80179B38
-	.sbss		start:0x8017A1D8 end:
 	.sdata2		start:0x8017AC80 end:0x8017AE90
 
 Kyojin/anim.cpp:
@@ -120,6 +119,7 @@ Kyojin/water.cpp:
 	.rodata		start:0x800E3E40 end:0x800E3E78
 	.data		start:0x800F4EF8 end:0x800F4F70
 	.sdata		start:0x80179BA0 end:0x80179BB8
+	.sbss		start:0x8017A1EC end:0x8017A1F0
 	.sdata2		start:0x8017B058 end:0x8017B0F0
 
 Kyojin/debug.cpp:
@@ -164,13 +164,14 @@ Kyojin/game.cpp:
 	.rodata		start:0x800E4528 end:0x800E4750
 	.data		start:0x800F79C0 end:0x800F7BF8
 	.bss		start:0x8014AED0 end:0x8014CFC0
-	.sdata		start:0x80179CC0 end:0x80179CD0
+	.sdata		start:0x80179CC0 end:0x80179D00
 	.sdata2		start:0x8017BB90 end:0x8017BC50
 
 Kyojin/shadow.cpp:
 	.text		start:0x80044E88 end:0x80045A60
 	.rodata		start:0x800E4750 end:0x800E4768
 	.data		start:0x800F7BF8 end:0x800F7C20
+	.sdata		start:0x80179D00 end:0x80179D18
 	.sbss		start:0x8017A1FC end:0x8017A200
 	.sdata2		start:0x8017BC50 end:0x8017BCA8
 
@@ -178,12 +179,14 @@ Kyojin/doshfx.cpp:
 	.text		start:0x80045A60 end:0x80048F88
 	.rodata		start:0x800E4768 end:0x800E47F8
 	.data		start:0x800F7C20 end:0x800F7DB0
+	.sdata		start:0x80179D18 end:0x80179D48
 	.sdata2		start:0x8017BCA8 end:0x8017BE28
 
 Kyojin/lod.cpp:
 	.text		start:0x80048F88 end:0x80049A10
 	.rodata		start:0x800E47F8 end:0x800E4810
 	.data		start:0x800F7DB0 end:0x800F7DD8
+	.sdata		start:0x80179D48 end:0x80179D58
 	.sbss		start:0x8017A200 end:0x8017A204
 	.sdata2		start:0x8017BE28 end:0x8017BE90
 
@@ -191,6 +194,7 @@ Kyojin/norty.cpp:
 	.text		start:0x80049A10 end:0x8004A9AC
 	.rodata		start:0x800E4810 end:0x800E4850
 	.data		start:0x800F7DD8 end:0x800F7F48
+	.sdata		start:0x80179D58 end:0x80179D88
 	.sdata2		start:0x8017BE90 end:0x8017BF28
 
 Kyojin/disaster.cpp:
@@ -198,18 +202,21 @@ Kyojin/disaster.cpp:
 	.rodata		start:0x800E4850 end:0x800E48B0
 	.data		start:0x800F7F48 end:0x800F82E8
 	.bss		start:0x8014CFC0 end:0x8014D0A0
+	.sdata		start:0x80179D88 end:0x80179DE8
 	.sdata2		start:0x8017BF28 end:0x8017C080
 
 Kyojin/effect.cpp:
 	.text		start:0x8004D518 end:0x8004E414
 	.rodata		start:0x800E48B0 end:0x800E48F8
 	.data		start:0x800F82E8 end:0x800F8420
+	.sdata		start:0x80179DE8 end:0x80179E18
 	.sdata2		start:0x8017C080 end:0x8017C118
 
 Kyojin/flock.cpp:
 	.text		start:0x8004E414 end:0x80051BF4
 	.rodata		start:0x800E48F8 end:0x800E4968
 	.data		start:0x800F8420 end:0x800F8978
+	.sdata		start:0x80179E18 end:0x80179E70
 	.sbss		start:0x8017A204 end:0x8017A208
 	.sdata2		start:0x8017C118 end:0x8017C2D0
 
@@ -217,7 +224,80 @@ Kyojin/sound.cpp:
 	.text		start:0x80051BF4 end:0x80053EC8
 	.rodata		start:0x800E4968 end:0x800E4B90
 	.data		start:0x800F8978 end:0x800F8A50
+	.sdata		start:0x80179E70 end:0x80179E90
 	.sdata2		start:0x8017C2D0 end:0x8017C3D0
+
+Kyojin/overlay.cpp:
+	.text		start:0x80053EC8 end:0x80058878
+	.rodata		start:0x800E4B90 end:0x800E4E68
+	.data		start:0x800F8A50 end:0x800F8F10
+	.sdata		start:0x80179E90 end:0x80179F10
+	.sbss		start:0x8017A208 end:0x8017A22C
+	.sdata2		start:0x8017C3D0 end:0x8017C590
+
+Kyojin/titles.cpp:
+	.text		start:0x80058878 end:0x8005B270
+	.rodata		start:0x800E4E68 end:0x800E50C0
+	.data		start:0x800F8F10 end:0x800F9580
+	.sdata		start:0x80179F10 end:0x80179F50
+	.sdata2		start:0x8017C590 end:0x8017C650
+
+Kyojin/THPSimple.c:
+	.text		start:0x8005B270 end:0x8005C820
+	.data		start:0x800F9580 end:0x800F9680
+	.bss		start:0x8014D0A0 end:0x8014D780
+	.sdata2		start:0x8017C650 end:0x8017C658
+
+Kyojin/THPDraw.c:
+	.text		start:0x8005C820 end:0x8005CFF0
+	.sdata2		start:0x8017C658 end:0x8017C680
+
+Kyojin/THPPlay.c:
+	.text		start:0x8005CFF0 end:0x8005D230
+	.rodata		start:0x800E50C0 end:0x800E5128
+	.sdata2		start:0x8017C680 end:0x8017C688
+
+Kyojin/monscreen.cpp:
+	.text		start:0x8005D230 end:0x8005EF08
+	.rodata		start:0x800E5128 end:0x800E51D0
+	.data		start:0x800F9680 end:0x800F96F0
+	.sdata		start:0x80179F50 end:0x80179F78
+	.sdata2		start:0x8017C688 end:0x8017C720
+
+Kyojin/phoscreen.cpp:
+	.text		start:0x8005EF08 end:0x80060C54
+	.rodata		start:0x800E51D0 end:0x800E5360
+	.data		start:0x800F96F0 end:0x800F99D0
+	.sdata		start:0x80179F78 end:0x80179FA8
+	.sdata2		start:0x8017C720 end:0x8017C780
+
+Kyojin/showmsg.cpp:
+	.text		start:0x80060C54 end:0x80061138
+	.data		start:0x800F99D0 end:0x800F9EC8
+	.sdata2		start:0x8017C780 end:0x8017C7A0
+
+Kyojin/stats.cpp:
+	.text		start:0x80061138 end:0x800632B8
+	.rodata		start:0x800E5360 end:0x800E54C0
+	.data		start:0x800F9EC8 end:0x800FA930
+	.sdata		start:0x80179FA8 end:0x80179FC0
+	.sbss		start:0x8017A22C end:0x8017A234
+	.sdata2		start:0x8017C7A0 end:0x8017C860
+
+Kyojin/sodoru.cpp:
+	.text		start:0x800632B8 end:0x80064540
+	.rodata		start:0x800E54C0 end:0x800E55D0
+	.data		start:0x800FA930 end:0x800FBDF0
+	.bss		start:0x8014D780 end:0x8014D9D8
+	.sbss		start:0x8017A234 end:0x8017A2A0
+	.sdata2		start:0x8017C860 end:0x8017C870
+
+Kyojin/chart.cpp:
+	.text		start:0x80064540 end:0x800672F0
+	.rodata		start:0x800E55D0 end:0x800E56A8
+	.data		start:0x800FBDF0 end:0x800FC178
+	.sdata		start:0x80179FC0 end:0x80179FD8
+	.sdata2		start:0x8017C870 end:0x8017C918
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
