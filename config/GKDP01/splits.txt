@@ -380,20 +380,144 @@ Kyojin/sodoru.cpp:
 Kyojin/chart.cpp:
 	extab       start:0x80007E88 end:0x80007EF8
 	extabindex  start:0x8000B34C end:0x8000B3F4
-	.text       start:0x80064540 end:0x800672F0
+	.text       start:0x80064540 end:0x80066C64
 	.rodata     start:0x800E55D0 end:0x800E56A8
 	.data       start:0x800FBDF0 end:0x800FC178
 	.sdata      start:0x80179FC0 end:0x80179FD8
 	.sdata2     start:0x8017C870 end:0x8017C918
 
-characterPipeline/shader/shaderResManage.c:
-	.data       start:0x80103710 end:0x801037D8
+Kyojin/comments.cpp:
+	.text		start:0x80066C64 end:0x800672F0
+	.rodata		start:0x800E56A8 end:0x800E5710
+	.data		start:0x800FC178 end:0x800FCDE0
+	.sdata		start:0x80179FD8 end:0x80179FF0
+	.sdata2		start:0x8017C918 end:0x8017C940
+
+Kyojin/msgdata.cpp:
+	.rodata		start:0x800E5710 end:0x800E5FE0
+	.data		start:0x800FCDE0 end:0x800FCE98
+	.sdata2		start:0x8017C940 end:0x8017C958
+
+Kyojin/msgdataEU.cpp:
+	.rodata		start:0x800E5FE0 end:0x800E9AE0
+	.data		start:0x800FCE98 end:0x800FD230
+	.sdata2		start:0x8017C958 end:0x8017C980
+
+TRK_MINNOW_DOLPHIN/mainloop.c:
+	.text		start:0x800672F0 end:0x80067458
+
+TRK_MINNOW_DOLPHIN/nubevent.c:
+	.text		start:0x80067458 end:0x800676B4
+	.bss		start:0x8014D9D8 end:0x8014DA00
+
+TRK_MINNOW_DOLPHIN/nubinit.c:
+	.text		start:0x800676B4 end:0x80067848
+	.rodata		start:0x800E9AE0 end:0x800E9B00
+	.bss		start:0x8014DA00 end:0x8014DA08
+
+TRK_MINNOW_DOLPHIN/msg.c:
+	.text		start:0x80067848 end:0x80067870
+
+TRK_MINNOW_DOLPHIN/msgbuf.c:
+	.text		start:0x80067870 end:0x800680B8
+	.bss		start:0x8014DA08 end:0x8014F3B8
+
+TRK_MINNOW_DOLPHIN/serpoll.c:
+	.text		start:0x800680B8 end:0x80068280
+	.bss		start:0x8014F3B8 end:0x8014F3D0
+
+TRK_MINNOW_DOLPHIN/usr_put.c:
+	.text		start:0x80068280 end:0x80068284
+
+TRK_MINNOW_DOLPHIN/dispatch.c:
+	.text		start:0x80068284 end:0x8006831C
+	.data		start:0x800FD230 end:0x800FD2F0
+	.bss		start:0x8014F3D0 end:0x8014F3D8
+
+TRK_MINNOW_DOLPHIN/msghndlr.c:
+	.text		start:0x8006831C end:0x800695C0
+
+TRK_MINNOW_DOLPHIN/support.c:
+	.text		start:0x800695C0 end:0x80069A3C
+
+TRK_MINNOW_DOLPHIN/mutex_TRK.c:
+	.text		start:0x80069A3C end:0x80069A54
+
+TRK_MINNOW_DOLPHIN/notify.c:
+	.text		start:0x80069A54 end:0x80069B2C
+
+TRK_MINNOW_DOLPHIN/flush_cache.c:
+	.text		start:0x80069B2C end:0x80069B64
+
+TRK_MINNOW_DOLPHIN/mem_TRK.c:
+	.text		start:0x80069B64 end:0x80069C28
+
+TRK_MINNOW_DOLPHIN/targimpl.c:
+	.text		start:0x80069C28 end:0x8006B204
+	.rodata		start:0x800E9B00 end:0x800E9B50
+	.data		start:0x800FD2F0 end:0x800FD320
+	.bss		start:0x8014F3D8 end:0x8014F958
+
+TRK_MINNOW_DOLPHIN/dolphin_trk.c:
+	.text		start:0x8006B204 end:0x8006B444
+	.data		start:0x800FD320 end:0x800FD360
+	.bss		start:0x8014F958 end:0x8014F960
+
+TRK_MINNOW_DOLPHIN/mpc_7xx_603e.c:
+	.text		start:0x8006B444 end:0x8006B7BC
+
+TRK_MINNOW_DOLPHIN/main_TRK.c:
+	.text		start:0x8006B7BC end:0x8006B804
+	.bss		start:0x8014F960 end:0x8014F968
+
+TRK_MINNOW_DOLPHIN/dolphin_trk_glue.c:
+	.text		start:0x8006B804 end:0x8006BB5C
+	.data		start:0x800FD360 end:0x800FD380
+
+TRK_MINNOW_DOLPHIN/targcont.c:
+	.text		start:0x8006BB5C end:0x8006BB90
+
+Runtime.PPCEABI.H/__va_arg.c:
+	.text		start:0x8006BB90 end:0x8006BC84
+
+Runtime.PPCEABI.H/global_destructor_chain.c:
+	.text		start:0x8006BC84 end:0x8006BCE4
+	.sbss		start:0x8017A2A0 end:0x8017A2A8
+
+Runtime.PPCEABI.H/NewMore.cp:
+	.text		start:0x8006BCE4 end:0x8006BD5C
+	.data		start:0x800FD380 end:0x800FD390
+
+Runtime.PPCEABI.H/NMWException.cp:
+	.text		start:0x8006BD5C end:0x8006C358
+	.rodata		start:0x800E9B50 end:0x800E9BB0
+	.sdata		start:0x80179FF0 end:0x8017A010
+
+Runtime.PPCEABI.H/ptmf.c:
+	.text		start:0x8006C358 end:0x8006C3B0
+	.rodata		start:0x800E9BB0 end:0x800E9BC0
+
+Runtime.PPCEABI.H/ExceptionPPC.cp:
+	.text		start:0x8006C3B0 end:0x8006D820
+	.rodata		start:0x800E9BC0 end:0x800E9C58
+	.data		start:0x800FD390 end:0x800FD488
+	.bss		start:0x8014F968 end:0x8014F978
+
+Runtime.PPCEABI.H/setjmp.c:
+	.text		start:0x8006D820 end:0x8006D914
+
+Runtime.PPCEABI.H/runtime.c:
+	.text		start:0x8006D914 end:0x8006E024
+	.rodata		start:0x800E9C58 end:0x800E9C70
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
 	.ctors      start:0x800E2D60 end:0x800E2D64
 	.dtors      start:0x800E2DA0 end:0x800E2DA4
 	.sdata      start:0x8017A010 end:0x8017A014
+
+characterPipeline/shader/shaderResManage.c:
+	.data       start:0x80103710 end:0x801037D8
 
 characterPipeline/shader/shaderExecute.c:
 	.text       start:0x800D5904 end:0x800D7384

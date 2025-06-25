@@ -16,16 +16,6 @@ Supported versions:
 
 - `GKDP01`: Rev 0 (EU)
 
-TODO LIST
-====
-- [ ] Label EVERYTHING in symbols.txt
-
-- [ ] Split a good amount of files
-
-- [ ] Actually get to matching code
-
-- [ ] Layout and headers
-
 Dependencies
 ============
 
