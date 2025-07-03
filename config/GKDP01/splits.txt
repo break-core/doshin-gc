@@ -97,7 +97,7 @@ Kyojin/cubegfx.cpp:
 	.data       start:0x800ED840 end:0x800F3CC8
 	.bss        start:0x8014A2D0 end:0x8014A658
 	.sdata      start:0x80179AA8 end:0x80179AD8
-	.sbss       start:0x8017A1B0 end:0x8017A1D0
+	.sbss       start:0x8017A1B0 end:0x8017A1D8
 	.sdata2     start:0x8017AA58 end:0x8017AB68
 
 Kyojin/map.cpp:
@@ -109,7 +109,6 @@ Kyojin/map.cpp:
 	.data       start:0x800F3CC8 end:0x800F3D40
 	.bss        start:0x8014A658 end:0x8014A698
 	.sdata      start:0x80179AD8 end:0x80179AF8
-	.sbss       start:0x8017A1D0 end:0x8017A1EC
 	.sdata2     start:0x8017AB68 end:0x8017AC80
 
 Kyojin/dosh.cpp:
@@ -154,7 +153,6 @@ Kyojin/water.cpp:
 	.rodata     start:0x800E3E40 end:0x800E3E78
 	.data       start:0x800F4EF8 end:0x800F4F70
 	.sdata      start:0x80179BA0 end:0x80179BB8
-	.sbss       start:0x8017A1EC end:0x8017A1F0
 	.sdata2     start:0x8017B058 end:0x8017B0F0
 
 Kyojin/debug.cpp:
@@ -164,7 +162,6 @@ Kyojin/debug.cpp:
 	.rodata     start:0x800E3E78 end:0x800E3E88
 	.bss        start:0x8014A6B8 end:0x8014AEC0
 	.sdata      start:0x80179BB8 end:0x80179BC0
-	.sbss       start:0x8017A1F0 end:0x8017A1F4
 	.sdata2     start:0x8017B0F0 end:0x8017B138
 
 Kyojin/object.cpp:
@@ -192,7 +189,6 @@ Kyojin/sky.cpp:
 	.data       start:0x800F65D0 end:0x800F6760
 	.bss        start:0x8014AEC0 end:0x8014AED0
 	.sdata      start:0x80179BE0 end:0x80179C18
-	.sbss       start:0x8017A1F4 end:0x8017A1FC
 	.sdata2     start:0x8017B7A0 end:0x8017B910
 
 Kyojin/town.cpp:
@@ -213,6 +209,7 @@ Kyojin/game.cpp:
 	.data       start:0x800F79C0 end:0x800F7BF8
 	.bss        start:0x8014AED0 end:0x8014CFC0
 	.sdata      start:0x80179CC0 end:0x80179D00
+	.sbss       start:0x8017A1E0 end:0x8017A248
 	.sdata2     start:0x8017BB90 end:0x8017BC50
 
 Kyojin/shadow.cpp:
@@ -222,7 +219,6 @@ Kyojin/shadow.cpp:
 	.rodata     start:0x800E4750 end:0x800E4768
 	.data       start:0x800F7BF8 end:0x800F7C20
 	.sdata      start:0x80179D00 end:0x80179D18
-	.sbss       start:0x8017A1FC end:0x8017A200
 	.sdata2     start:0x8017BC50 end:0x8017BCA8
 
 Kyojin/doshfx.cpp:
@@ -241,7 +237,6 @@ Kyojin/lod.cpp:
 	.rodata     start:0x800E47F8 end:0x800E4810
 	.data       start:0x800F7DB0 end:0x800F7DD8
 	.sdata      start:0x80179D48 end:0x80179D58
-	.sbss       start:0x8017A200 end:0x8017A204
 	.sdata2     start:0x8017BE28 end:0x8017BE90
 
 Kyojin/norty.cpp:
@@ -280,7 +275,6 @@ Kyojin/flock.cpp:
 	.rodata     start:0x800E48F8 end:0x800E4968
 	.data       start:0x800F8420 end:0x800F8978
 	.sdata      start:0x80179E18 end:0x80179E70
-	.sbss       start:0x8017A204 end:0x8017A208
 	.sdata2     start:0x8017C118 end:0x8017C2D0
 
 Kyojin/sound.cpp:
@@ -299,7 +293,7 @@ Kyojin/overlay.cpp:
 	.rodata     start:0x800E4B90 end:0x800E4E68
 	.data       start:0x800F8A50 end:0x800F8F10
 	.sdata      start:0x80179E90 end:0x80179F10
-	.sbss       start:0x8017A208 end:0x8017A22C
+	.sbss       start:0x8017A248 end:0x8017A258
 	.sdata2     start:0x8017C3D0 end:0x8017C590
 
 Kyojin/titles.cpp:
@@ -309,6 +303,7 @@ Kyojin/titles.cpp:
 	.rodata     start:0x800E4E68 end:0x800E50C0
 	.data       start:0x800F8F10 end:0x800F9580
 	.sdata      start:0x80179F10 end:0x80179F50
+	.sbss       start:0x8017A258 end:0x8017A280
 	.sdata2     start:0x8017C590 end:0x8017C650
 
 Kyojin/THPSimple.c:
@@ -317,6 +312,7 @@ Kyojin/THPSimple.c:
 	.text       start:0x8005B270 end:0x8005C820
 	.data       start:0x800F9580 end:0x800F9680
 	.bss        start:0x8014D0A0 end:0x8014D780
+	.sbss       start:0x8017A280 end:0x8017A298
 	.sdata2     start:0x8017C650 end:0x8017C658
 
 Kyojin/THPDraw.c:
@@ -364,7 +360,6 @@ Kyojin/stats.cpp:
 	.rodata     start:0x800E5360 end:0x800E54C0
 	.data       start:0x800F9EC8 end:0x800FA930
 	.sdata      start:0x80179FA8 end:0x80179FC0
-	.sbss       start:0x8017A22C end:0x8017A234
 	.sdata2     start:0x8017C7A0 end:0x8017C860
 
 Kyojin/sodoru.cpp:
@@ -374,7 +369,7 @@ Kyojin/sodoru.cpp:
 	.rodata     start:0x800E54C0 end:0x800E55D0
 	.data       start:0x800FA930 end:0x800FBDF0
 	.bss        start:0x8014D780 end:0x8014D9D8
-	.sbss       start:0x8017A234 end:0x8017A2A0
+	.sbss       start:0x8017A298 end:0x8017A2A0
 	.sdata2     start:0x8017C860 end:0x8017C870
 
 Kyojin/chart.cpp:
@@ -816,6 +811,10 @@ musyx/runtime/hardware.c:
 	.sbss       start:0x8017A428 end:0x8017A438
 	.sdata2     start:0x8017CCF0 end:0x8017CD08
 
+musyx/runtime/dsp_import.c:
+	.data       start:0x800FF400 end:0x80100DE0
+	.sdata      start:0x8017A050 end:0x8017A058
+
 musyx/runtime/hw_aramdma.c:
 	extab       start:0x800085FC end:0x80008624
 	extabindex  start:0x8000BD90 end:0x8000BDCC
@@ -834,19 +833,3 @@ musyx/runtime/hw_memory.c:
 	extab       start:0x80008684 end:0x80008694
 	extabindex  start:0x8000BE5C end:0x8000BE74
 	.text       start:0x8008EB88 end:0x8008EBDC
-
-musyx/runtime/dsp_import.c:
-	.data       start:0x800FF400 end:0x80100DE0
-	.sdata      start:0x8017A050 end:0x8017A058
-
-characterPipeline/shader/shaderResManage.c:
-	.data       start:0x80103710 end:0x801037D8
-	
-characterPipeline/shader/shaderExecute.c:
-	.text       start:0x800D5904 end:0x800D7384
-	.bss        start:0x80178DB0 end:0x80179580
-	.sbss       start:0x8017A8A0 end:0x8017A8B0
-
-characterPipeline/shader/shaderSetTEV.c:
-	.text       start:0x800D7384 end:0x800D7C80
-	.data       start:0x801037D8 end:0x80103818
