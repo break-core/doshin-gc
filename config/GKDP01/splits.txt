@@ -209,7 +209,7 @@ Kyojin/game.cpp:
 	.data       start:0x800F79C0 end:0x800F7BF8
 	.bss        start:0x8014AED0 end:0x8014CFC0
 	.sdata      start:0x80179CC0 end:0x80179D00
-	.sbss       start:0x8017A1E0 end:0x8017A248
+	.sbss       start:0x8017A1E0 end:0x8017A268
 	.sdata2     start:0x8017BB90 end:0x8017BC50
 
 Kyojin/shadow.cpp:
@@ -228,6 +228,7 @@ Kyojin/doshfx.cpp:
 	.rodata     start:0x800E4768 end:0x800E47F8
 	.data       start:0x800F7C20 end:0x800F7DB0
 	.sdata      start:0x80179D18 end:0x80179D48
+	.sbss       start:0x8017A268 end:0x8017A270
 	.sdata2     start:0x8017BCA8 end:0x8017BE28
 
 Kyojin/lod.cpp:
@@ -293,7 +294,7 @@ Kyojin/overlay.cpp:
 	.rodata     start:0x800E4B90 end:0x800E4E68
 	.data       start:0x800F8A50 end:0x800F8F10
 	.sdata      start:0x80179E90 end:0x80179F10
-	.sbss       start:0x8017A248 end:0x8017A258
+	.sbss       start:0x8017A270 end:0x8017A280
 	.sdata2     start:0x8017C3D0 end:0x8017C590
 
 Kyojin/titles.cpp:
@@ -303,7 +304,6 @@ Kyojin/titles.cpp:
 	.rodata     start:0x800E4E68 end:0x800E50C0
 	.data       start:0x800F8F10 end:0x800F9580
 	.sdata      start:0x80179F10 end:0x80179F50
-	.sbss       start:0x8017A258 end:0x8017A280
 	.sdata2     start:0x8017C590 end:0x8017C650
 
 Kyojin/THPSimple.c:
