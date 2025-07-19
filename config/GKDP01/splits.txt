@@ -833,3 +833,88 @@ musyx/runtime/hw_memory.c:
 	extab       start:0x80008684 end:0x80008694
 	extabindex  start:0x8000BE5C end:0x8000BE74
 	.text       start:0x8008EB88 end:0x8008EBDC
+
+dolphin/thp/THPDec.c:
+	.text       start:0x8008EBDC end:0x8009611C
+	.rodata     start:0x800EA860 end:0x800EA8F0
+	.bss        start:0x80176E20 end:0x80176F50
+	.sbss       start:0x8017A480 end:0x8017A598
+	.sdata2     start:0x8017CD08 end:0x8017CD28
+
+dolphin/thp/THPAudio.c:
+	.text       start:0x8009611C end:0x8009664C
+
+dolphin/vi/vi.c:
+	.text       start:0x8009664C end:0x80097FA4
+	.data       start:0x80100DE0 end:0x801010A8
+	.bss        start:0x80176F50 end:0x80177098
+	.sbss       start:0x8017A598 end:0x8017A5E8
+
+dolphin/ai/ai.c:
+	.text       start:0x80097FA4 end:0x80098868
+	.sbss       start:0x8017A5E8 end:0x8017A628
+
+dolphin/ar/ar.c:
+	.text       start:0x80098868 end:0x800993F4
+	.sbss       start:0x8017A628 end:0x8017A648
+
+dolphin/ar/arq.c:
+	.text       start:0x800993F4 end:0x80099788
+	.sbss       start:0x8017A648 end:0x8017A670
+
+dolphin/base/PPCArch.c:
+	.text       start:0x80099788 end:0x80099854
+
+dolphin/card/CARDBios.c:
+	.text       start:0x80099854 end:0x8009AB20
+	.data       start:0x801010A8 end:0x801010C0
+	.bss        start:0x80177098 end:0x801772D8
+
+dolphin/card/CARDUnlock.c:
+	.text       start:0x8009AB20 end:0x8009BD80
+	.data       start:0x801010C0 end:0x80101220
+	.sdata      start:0x8017A058 end:0x8017A060
+
+dolphin/card/CARDRdwr.c:
+	.text       start:0x8009BD80 end:0x8009C000
+
+dolphin/card/CARDBlock.c:
+	.text       start:0x8009C000 end:0x8009C40C
+
+dolphin/card/CARDDir.c:
+	.text       start:0x8009C40C end:0x8009C668
+
+dolphin/card/CARDCheck.c:
+	.text       start:0x8009C668 end:0x8009CFEC
+
+dolphin/card/CARDMount.c:
+	.text       start:0x8009CFEC end:0x8009DAB4
+	.data       start:0x80101220 end:0x80101260
+
+dolphin/card/CARDFormat.c:
+	.text       start:0x8009DAB4 end:0x8009E2A4
+
+dolphin/card/CARDOpen.c:
+	.text       start:0x8009E2A4 end:0x8009E6F8
+
+dolphin/card/CARDCreate.c:
+	.text       start:0x8009E6F8 end:0x8009EA90
+
+dolphin/card/CARDRead.c:
+	.text       start:0x8009EA90 end:0x8009EF08
+
+dolphin/card/CARDWrite.c:
+	.text       start:0x8009EF08 end:0x8009F284
+
+dolphin/card/CARDDelete.c:
+	.text       start:0x8009F284 end:0x8009F480
+
+dolphin/card/CARDStat.c:
+	.text       start:0x8009F480 end:0x8009F960
+
+dolphin/card/CARDRename.c:
+	.text       start:0x8009F960 end:0x8009FBA4
+
+dolphin/card/CARDNet.c:
+	.text       start:0x8009FBA4 end:0x8009FC68
+	.sdata      start:0x8017A060 end:0x8017A068
