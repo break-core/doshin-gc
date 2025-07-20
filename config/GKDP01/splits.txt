@@ -1164,3 +1164,28 @@ dolphin/os/OSThread.c:
 dolphin/os/OSTime.c:
 	.text       start:0x800B5CF4 end:0x800B6118
 	.data       start:0x801036A0 end:0x80103700
+
+dolphin/os/__start.c:
+	.text		start:0x800B6118 end:0x800B6138
+
+dolphin/os/__ppc_eabi_init.cpp:
+	.text		start:0x800B6138 end:0x800B61AC
+
+dolphin/pad/Padclamp.c:
+	.text		start:0x800B61AC end:0x800B63E4
+	.sdata		start:0x8017A118 end:0x8017A120
+
+dolphin/pad/Pad.c:
+	.text		start:0x800B63E4 end:0x800B7EAC
+	.data		start:0x80103700 end:0x80103710
+	.sdata		start:0x8017A120 end:0x8017A140
+	.sbss		start:0x8017A870 end:0x8017A898
+
+dolphin/support/List.c:
+	.text		start:0x800B7EAC end:0x800B7FC0
+
+dolphin/support/string.c:
+	.text		start:0x800B7FC0 end:0x800B8060
+
+dolphin/support/Tree.c:
+	.text		start:0x800B8060 end:0x800B810C
