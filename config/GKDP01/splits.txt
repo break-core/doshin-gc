@@ -1337,3 +1337,102 @@ libjpeg/jdhuff-nin.c:
 
 libjpeg/jchuff-nin.c:
 	.text		start:0x800D4110 end:0x800D5904
+
+charPipeline/shader/shaderExecute.c:
+	.text		start:0x800D5904 end:0x800D7384
+	.rodata		start:0x800EC600 end:0x800ECA90
+	.bss		start:0x80178DB0 end:0x80179580
+	.sbss		start:0x8017A8A0 end:0x8017A8B0
+	.sdata2		start:0x8017CF10 end:0x8017CF20
+
+charPipeline/shader/shaderResManage.c:
+	.data		start:0x80103710 end:0x801037D8
+
+charPipeline/shader/shaderSetTEV.c:
+	.text		start:0x800D7384 end:0x800D7C80
+	.rodata		start:0x800ECA90 end:0x800ECB30
+	.data		start:0x801037D8 end:0x80103858
+	.sbss		start:0x8017A8B0 end:0x8017A8B8
+
+charPipeline/shader/shaderTCInternals.c:
+	.text		start:0x800D7C80 end:0x800D7D94
+	.data		start:0x80103858 end:0x801038D8
+
+charPipeline/shader/shader.c:
+	.text		start:0x800D7D94 end:0x800D7EF8
+	.rodata		start:0x800ECB30 end:0x800ECBE8
+	.data		start:0x801038D8 end:0x80103D70
+	.sdata		start:0x8017A140 end:0x8017A150
+
+charPipeline/texPalette/texPalette.c:
+	.text		start:0x800D7EF8 end:0x800D8264
+	.rodata		start:0x800ECBE8 end:0x800ECC18
+	.sdata2		start:0x8017CF20 end:0x8017CF28
+
+charPipeline/lighting/light.c:
+	.text		start:0x800D8264 end:0x800D83BC
+	.sdata2		start:0x8017CF28 end:0x8017CF30
+
+charPipeline/geoPalette/normalTable.c:
+	.data		start:0x80103D70 end:0x80104940
+	.sdata		start:0x8017A150 end:0x8017A158
+
+charPipeline/geoPalette/geoPalette.c:
+	.text		start:0x800D83BC end:0x800D8D0C
+	.rodata		start:0x800ECC18 end:0x800ECC90
+	.sdata2		start:0x8017CF30 end:0x8017CF38
+
+charPipeline/geoPalette/displayObject.c:
+	.text		start:0x800D8D0C end:0x800DA040
+	.data		start:0x80104940 end:0x80104970
+	.bss		start:0x80179580 end:0x801795B0
+	.sbss		start:0x8017A8B8 end:0x8017A8E0
+	.sdata2		start:0x8017CF38 end:0x8017CF50
+
+charPipeline/skinning/SKNControl.c:
+	.text		start:0x800DA040 end:0x800DADC8
+	.bss		start:0x801795B0 end:0x801795D8
+	.sbss		start:0x8017A8E0 end:0x8017A8E8
+
+charPipeline/skinning/SKNMath.c:
+	.text		start:0x800DADC8 end:0x800DB234
+
+charPipeline/skinning/SKNStats.c:
+	.text		start:0x800DB234 end:0x800DB398
+	.rodata		start:0x800ECC90 end:0x800ECD88
+	.data		start:0x80104970 end:0x80104988
+	.bss		start:0x801795D8 end:0x80179710
+	.sdata2		start:0x8017CF50 end:0x8017CF60
+
+charPipeline/skinning/GQRSetup.c:
+	.text		start:0x800DB398 end:0x800DB418
+
+charPipeline/control/control.c:
+	.text		start:0x800DB418 end:0x800DBC1C
+	.sdata2		start:0x8017CF60 end:0x8017CF70
+
+charPipeline/anim/animPipe.c:
+	.text		start:0x800DBC1C end:0x800DD8AC
+	.rodata		start:0x800ECD88 end:0x800ECDE8
+	.sdata		start:0x8017A158 end:0x8017A168
+	.sdata2		start:0x8017CF70 end:0x8017CFA8
+
+charPipeline/actor/actorAnim.c:
+	.text		start:0x800DD8AC end:0x800DDAC0
+
+charPipeline/actor/boneAnim.c:
+	.text		start:0x800DDAC0 end:0x800DDCDC
+	.sdata2		start:0x8017CFA8 end:0x8017CFB0
+
+charPipeline/actor/actor.c:
+	.text		start:0x800DDCDC end:0x800DE9D4
+	.rodata		start:0x800ECDE8 end:0x800ECE40
+
+charPipeline/anim/animBank.c:
+	.text		start:0x800DE9D4 end:0x800DED0C
+	.rodata		start:0x800ECE40 end:0x800ECE65
+
+charPipeline/fileCache/fileCache.c:
+	.text		start:0x800DED0C end:0x800DEF60
+	.bss		start:0x80179710 end:0x80179720
+	.sbss		start:0x8017A8E8 end:0x8017A8F0
