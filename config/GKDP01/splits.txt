@@ -1178,6 +1178,7 @@ dolphin/pad/Padclamp.c:
 dolphin/pad/Pad.c:
 	.text		start:0x800B63E4 end:0x800B7EAC
 	.data		start:0x80103700 end:0x80103710
+	.bss		start:0x80178D60 end:0x80178DB0
 	.sdata		start:0x8017A120 end:0x8017A140
 	.sbss		start:0x8017A870 end:0x8017A898
 
@@ -1189,3 +1190,150 @@ dolphin/support/string.c:
 
 dolphin/support/Tree.c:
 	.text		start:0x800B8060 end:0x800B810C
+
+libjpeg/jcapimin.c:
+	.text		start:0x800B810C end:0x800B84F0
+	.sdata2		start:0x8017CE78 end:0x8017CE80
+
+libjpeg/jcapistd.c:
+	.text		start:0x800B84F0 end:0x800B872C
+
+libjpeg/jccoefct.c:
+	.text		start:0x800B872C end:0x800B91A8
+
+libjpeg/jccolor.c:
+	.text		start:0x800B91A8 end:0x800BA0FC
+
+libjpeg/jcdctmgr.c:
+	.text		start:0x800BA0FC end:0x800BACB8
+	.rodata		start:0x800EA8F0 end:0x800EA9B0
+	.sdata2		start:0x8017CE80 end:0x8017CEA8
+
+libjpeg/jcinit.c:
+	.text		start:0x800BACB8 end:0x800BADCC
+
+libjpeg/jcmainct.c:
+	.text		start:0x800BADCC end:0x800BB044
+
+libjpeg/jcmarker.c:
+	.text		start:0x800BB044 end:0x800BD830
+
+libjpeg/jcmaster.c:
+	.text		start:0x800BD830 end:0x800BEAB0
+
+libjpeg/jcomapi.c:
+	.text		start:0x800BEAB0 end:0x800BEBE8
+
+libjpeg/jcparam.c:
+	.text		start:0x800BEBE8 end:0x800BF6B4
+	.rodata		start:0x800EA9B0 end:0x800EAD60
+
+libjpeg/jcphuff.c:
+	.text		start:0x800BF6B4 end:0x800C0F68
+
+libjpeg/jcprepct.c:
+	.text		start:0x800C0F68 end:0x800C1840
+
+libjpeg/jcsample.c:
+	.text		start:0x800C1840 end:0x800C2A54
+
+libjpeg/jdapimin.c:
+	.text		start:0x800C2A54 end:0x800C3178
+	.sdata2		start:0x8017CEA8 end:0x8017CEB0
+
+libjpeg/jdapistd.c:
+	.text		start:0x800C3178 end:0x800C352C
+
+libjpeg/jdcoefct.c:
+	.text		start:0x800C352C end:0x800C476C
+
+libjpeg/jdcolor.c:
+	.text		start:0x800C476C end:0x800C5494
+
+libjpeg/jddctmgr.c:
+	.text		start:0x800C5494 end:0x800C5B5C
+	.rodata		start:0x800EAD60 end:0x800EAE20
+	.sdata2		start:0x8017CEB0 end:0x8017CEB8
+
+libjpeg/jdinput.c:
+	.text		start:0x800C5B5C end:0x800C64DC
+
+libjpeg/jdmainct.c:
+	.text		start:0x800C64DC end:0x800C7210
+
+libjpeg/jdmarker.c:
+	.text		start:0x800C7210 end:0x800C95E8
+
+libjpeg/jdmaster.c:
+	.text		start:0x800C95E8 end:0x800CA2C8
+
+libjpeg/jdmerge.c:
+	.text		start:0x800CA2C8 end:0x800CAAF4
+
+libjpeg/jdphuff.c:
+	.text		start:0x800CAAF4 end:0x800CBCBC
+	.rodata		start:0x800EAE20 end:0x800EAEA0
+
+libjpeg/jdpostct.c:
+	.text		start:0x800CBCBC end:0x800CC1DC
+
+libjpeg/jdsample.c:
+	.text		start:0x800CC1DC end:0x800CCBDC
+
+libjpeg/jerror.c:
+	.text		start:0x800CCBDC end:0x800CCE98
+	.rodata		start:0x800EAEA0 end:0x800EC318
+	.sdata2		start:0x8017CEB8 end:0x8017CEC8
+
+libjpeg/jfdctflt.c:
+	.text		start:0x800CCE98 end:0x800CD208
+	.sdata2		start:0x8017CEC8 end:0x8017CED8
+
+libjpeg/jfdctfst.c:
+	.text		start:0x800CD208 end:0x800CD410
+
+libjpeg/jfdctint.c:
+	.text		start:0x800CD410 end:0x800CD6A0
+
+libjpeg/jidctflt.c:
+	.text		start:0x800CD6A0 end:0x800CDB1C
+	.sdata2		start:0x8017CED8 end:0x8017CEF0
+
+libjpeg/jidctfst.c:
+	.text		start:0x800CDB1C end:0x800CDEE4
+
+libjpeg/jidctint.c:
+	.text		start:0x800CDEE4 end:0x800CE34C
+
+libjpeg/jidctred.c:
+	.text		start:0x800CE34C end:0x800CE928
+
+libjpeg/jmemmgr.c:
+	.text		start:0x800CE928 end:0x800CFCB8
+	.sdata2		start:0x8017CEF0 end:0x8017CF10
+
+libjpeg/jquant1.c:
+	.text		start:0x800CFCB8 end:0x800D11D0
+	.rodata		start:0x800EC318 end:0x800EC428
+
+libjpeg/jquant2.c:
+	.text		start:0x800D11D0 end:0x800D2AB0
+
+libjpeg/jutils.c:
+	.text		start:0x800D2AB0 end:0x800D2BB0
+	.rodata		start:0x800EC428 end:0x800EC568
+
+libjpeg/jmemcpp.c:
+	.text		start:0x800D2BB0 end:0x800D2CF4
+	.rodata		start:0x800EC568 end:0x800EC580
+
+libjpeg/example.c:
+	.text		start:0x800D2CF4 end:0x800D301C
+	.sbss		start:0x8017A898 end:0x8017A8A0
+
+libjpeg/jdhuff-nin.c:
+	.text		start:0x800D301C end:0x800D4110
+	.rodata		start:0x800EC580 end:0x800EC600
+
+libjpeg/jchuff-nin.c:
+	.text		start:0x800D4110 end:0x800D5904
