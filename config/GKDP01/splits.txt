@@ -97,7 +97,7 @@ Kyojin/cubegfx.cpp:
 	.data       start:0x800ED840 end:0x800F3CC8
 	.bss        start:0x8014A2D0 end:0x8014A658
 	.sdata      start:0x80179AA8 end:0x80179AD8
-	.sbss       start:0x8017A1B0 end:0x8017A1D8
+	.sbss       start:0x8017A1B0 end:0x8017A1D0
 	.sdata2     start:0x8017AA58 end:0x8017AB68
 
 Kyojin/map.cpp:
@@ -171,6 +171,7 @@ Kyojin/object.cpp:
 	.rodata     start:0x800E3E88 end:0x800E3F20
 	.data       start:0x800F4F70 end:0x800F5020
 	.sdata      start:0x80179BC0 end:0x80179BE0
+	.sbss       start:0x8017A1D0 end:0x8017A1D8
 	.sdata2     start:0x8017B138 end:0x8017B1C0
 
 Kyojin/shapes.cpp:
@@ -179,6 +180,7 @@ Kyojin/shapes.cpp:
 	.text       start:0x8003541C end:0x800358A4
 	.rodata     start:0x800E3F20 end:0x800E4250
 	.data       start:0x800F5020 end:0x800F65D0
+	.sbss       start:0x8017A1D8 end:0x8017A1E0
 	.sdata2     start:0x8017B1C0 end:0x8017B7A0
 
 Kyojin/sky.cpp:
@@ -447,7 +449,11 @@ TRK_MINNOW_DOLPHIN/flush_cache.c:
 	.text       start:0x80069B2C end:0x80069B64
 
 TRK_MINNOW_DOLPHIN/mem_TRK.c:
+	.init		start:0x80003100 end:0x80003154
 	.text       start:0x80069B64 end:0x80069C28
+
+TRK_MINNOW_DOLPHIN/__exception.s:
+	.init		start:0x80003154 end:0x800050A8
 
 TRK_MINNOW_DOLPHIN/targimpl.c:
 	.text       start:0x80069C28 end:0x8006B204
@@ -474,12 +480,15 @@ TRK_MINNOW_DOLPHIN/dolphin_trk_glue.c:
 TRK_MINNOW_DOLPHIN/targcont.c:
 	.text       start:0x8006BB5C end:0x8006BB90
 
+Runtime.PPCEABI.H/__mem.c:
+	.init		start:0x800050A8 end:0x800051EC
+
 Runtime.PPCEABI.H/__va_arg.c:
 	.text       start:0x8006BB90 end:0x8006BC84
 
 Runtime.PPCEABI.H/global_destructor_chain.c:
 	.text       start:0x8006BC84 end:0x8006BCE4
-	.dtors      start:0x800E2DA8 end:0x800E2DAC
+	.dtors      start:0x800E2DA0 end:0x800E2DA4
 	.sbss       start:0x8017A2A0 end:0x8017A2A8
 
 Runtime.PPCEABI.H/NewMore.cp:
@@ -523,7 +532,7 @@ Runtime.PPCEABI.H/runtime.c:
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8006E024 end:0x8006E0A0
 	.ctors      start:0x800E2D60 end:0x800E2D64
-	.dtors      start:0x800E2DA0 end:0x800E2DA4
+	.dtors      start:0x800E2DA4 end:0x800E2DAC
 	.sdata      start:0x8017A010 end:0x8017A018
 
 MSL_C/abort_exit.c:
@@ -1166,9 +1175,11 @@ dolphin/os/OSTime.c:
 	.data       start:0x801036A0 end:0x80103700
 
 dolphin/os/__start.c:
+	.init		start:0x800051EC end:0x8000541C
 	.text       start:0x800B6118 end:0x800B6138
 
 dolphin/os/__ppc_eabi_init.cpp:
+	.init		start:0x8000541C end:0x8000550C
 	.text       start:0x800B6138 end:0x800B61AC
 
 dolphin/pad/Padclamp.c:
