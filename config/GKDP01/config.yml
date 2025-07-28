@@ -9,5 +9,4 @@ splits: config/GKDP01/splits.txt
 symbols_known: false
 fill_gaps: true
 write_asm: true
-detect_strings: true
 mw_comment_version: 10

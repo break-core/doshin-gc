@@ -186,8 +186,7 @@ cflags_base = [
     "-enum int",
     "-fp hardware",
     "-Cpp_exceptions off",
-    # "-W all",
-    "-O4,p",
+    "-O3,s",
     "-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
@@ -220,6 +219,16 @@ cflags_runtime = [
     "-inline auto",
 ]
 
+# Doshin flags
+cflags_doshin = [
+    *cflags_base,
+    "-lang=c++",
+    "-O4,p",
+    "-inline deferred",
+    "-str reuse,readonly",
+    "-fp_contract on"
+]
+
 # REL flags
 cflags_rel = [
     *cflags_base,
@@ -227,7 +236,7 @@ cflags_rel = [
     "-sdata2 0",
 ]
 
-config.linker_version = "GC/1.3.2"
+config.linker_version = "GC/1.2.5n"
 
 
 # Helper function for Dolphin libraries
@@ -267,7 +276,7 @@ config.libs = [
     {
         "lib": "Kyojin",
         "mw_version": config.linker_version,
-        "cflags": cflags_base,
+        "cflags": cflags_doshin,
         "progress_category": "game",  # str | List[str]
         "objects": [
             Object(NonMatching, "Kyojin/main.cpp"),
@@ -301,8 +310,8 @@ config.libs = [
             Object(NonMatching, "Kyojin/sound.cpp"),
             Object(NonMatching, "Kyojin/overlay.cpp"),
             Object(NonMatching, "Kyojin/titles.cpp"),
-            Object(NonMatching, "Kyojin/THPSimple.c"),
-            Object(NonMatching, "Kyojin/THPDraw.c"),
+            #Object(NonMatching, "Kyojin/THPSimple.c"),
+            #Object(NonMatching, "Kyojin/THPDraw.c"),
             Object(NonMatching, "Kyojin/THPPlay.c"),
             Object(NonMatching, "Kyojin/monscreen.cpp"),
             Object(NonMatching, "Kyojin/phoscreen.cpp"),
@@ -310,6 +319,9 @@ config.libs = [
             Object(NonMatching, "Kyojin/stats.cpp"),
             Object(NonMatching, "Kyojin/sodoru.cpp"),
             Object(NonMatching, "Kyojin/chart.cpp"),
+            Object(NonMatching, "Kyojin/comments.cpp"),
+            Object(NonMatching, "Kyojin/msgdata.cpp"),
+            Object(NonMatching, "Kyojin/msgdataEU.cpp") # Note: Not in JP version
         ],
     },
 ]
