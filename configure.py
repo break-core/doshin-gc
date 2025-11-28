@@ -143,11 +143,11 @@ if not config.non_matching:
 
 # Tool versions
 config.binutils_tag = "2.42-1"
-config.compilers_tag = "20240706"
-config.dtk_tag = "v1.4.1"
-config.objdiff_tag = "v2.7.1"
-config.sjiswrap_tag = "v1.2.0"
-config.wibo_tag = "0.6.11"
+config.compilers_tag = "20250812"
+config.dtk_tag = "v1.7.4"
+config.objdiff_tag = "v3.4.1"
+config.sjiswrap_tag = "v1.2.2"
+config.wibo_tag = "1.0.0-beta.5"
 
 # Project
 config.config_path = Path("config") / config.version / "config.yml"
@@ -186,8 +186,8 @@ cflags_base = [
     "-enum int",
     "-fp hardware",
     "-Cpp_exceptions off",
-    "-O4,p",
-    "-inline auto",
+    #"-O4,p",
+    #"-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
     "-maxerrors 1",
@@ -212,11 +212,19 @@ else:
 # Metrowerks library flags
 cflags_runtime = [
     *cflags_base,
-    "-use_lmw_stmw on",
-    "-str reuse,pool,readonly",
-    "-gccinc",
-    "-common off",
+    "-O4,p",
     "-inline auto",
+    "-fp_contract on",
+    "-str reuse,pool,readonly",
+    "-inline deferred,auto",
+]
+
+# Yoinked from SMS which also uses December 2001 SDK
+cflags_dolphin = [
+    *cflags_base,
+    "-O4,p",
+    "-inline auto",
+    "-fp_contract off",
 ]
 
 # Doshin flags
@@ -244,7 +252,16 @@ def DolphinLib(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
     return {
         "lib": lib_name,
         "mw_version": "GC/1.2.5n",
-        "cflags": cflags_base,
+        "cflags": cflags_dolphin,
+        "progress_category": "sdk",
+        "objects": objects,
+    }
+
+def DolphinLibNP(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
+    return {
+        "lib": lib_name,
+        "mw_version": "GC/1.2.5",
+        "cflags": cflags_dolphin,
         "progress_category": "sdk",
         "objects": objects,
     }
@@ -273,6 +290,17 @@ config.libs = [
             Object(NonMatching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
         ],
     },
+
+    # SMS claims that mtx uses 1.2.5 instead of 1.2.5n
+    # Using that seems to work w/o issues
+    DolphinLibNP("mtx", [
+        Object(Matching, "dolphin/mtx/mtx.c"),
+        Object(Matching, "dolphin/mtx/mtxvec.c"),
+        Object(Matching, "dolphin/mtx/mtx44.c"),
+        Object(Matching, "dolphin/mtx/vec.c"),
+        Object(Matching, "dolphin/mtx/quat.c"),
+        Object(Matching, "dolphin/mtx/psmtx.c"),
+    ]),
     {
         "lib": "Kyojin",
         "mw_version": config.linker_version,

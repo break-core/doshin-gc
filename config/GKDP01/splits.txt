@@ -1066,11 +1066,11 @@ dolphin/mtx/mtx44.c:
 
 dolphin/mtx/vec.c:
 	.text       start:0x800AEDCC end:0x800AF070
-	.sdata2     start:0x8017CE58 end:0x8017CE68
+	.sdata2     start:0x8017CE58 end:0x8017CE64
 
 dolphin/mtx/quat.c:
 	.text       start:0x800AF070 end:0x800AF178
-	.sdata2     start:0x8017CE68 end:0x8017CE70
+	.sdata2     start:0x8017CE68 end:0x8017CE6C
 
 dolphin/mtx/psmtx.c:
 	.text       start:0x800AF178 end:0x800AF1C4
