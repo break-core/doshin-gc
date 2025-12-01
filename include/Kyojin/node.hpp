@@ -22,8 +22,8 @@ public:
 	// It will call (name) function on this node's child and then
 	// repeat to the next node until that node is null.
 	virtual void update();
-	virtual void draw(Gfx& g);
 	virtual void initGfx(Gfx& g);
+	virtual void draw(Gfx& g);
 	virtual void procEvent(int id);
 
 	// Performs a check on the Node's magic

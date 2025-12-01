@@ -244,7 +244,7 @@ cflags_rel = [
     "-sdata2 0",
 ]
 
-config.linker_version = "GC/1.2.5n"
+config.linker_version = "GC/1.2.5"
 
 
 # Helper function for Dolphin libraries
